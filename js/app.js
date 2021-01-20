@@ -10,21 +10,19 @@ if ( typeof myNumber != 'number'){
 } 
   
 
-const CommerceItemlist = 'Shoes,Jeans,hats,socks';
-let shoes;
+let CommerceItemlist = 'shoes'
 
 switch (CommerceItemlist) {
-   
-    case Shoes:
+    case 'shoes':
         console.log('Shoes are $50');
       break;
-    case Jeans:
+    case 'jeans':
         console.log('Jeans are $25');
       break;
-    case hats :
+    case 'hats' :
         console.log('hats are $12');
       break;
-    case socks:
+    case 'socks':
         console.log('socks are $2');
     default:
         console.log('Invalid item');
@@ -32,6 +30,6 @@ switch (CommerceItemlist) {
   }
 
   function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
+    return Math.floor(Math.random(50) * Math.floor(100));
   }
   console.log(getRandomInt(50));
